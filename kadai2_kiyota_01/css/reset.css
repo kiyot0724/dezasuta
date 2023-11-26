@@ -39,7 +39,7 @@ img {
 }
 
 @media screen and (max-width: 960px){
-    ul{
+    /* ul{ */
         flex-direction: column;
 }
 .imageArea{
