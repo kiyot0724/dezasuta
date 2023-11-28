@@ -44,8 +44,8 @@
 }
 
 ul{
+    max-width: 100%;
     display: flex;
-    justify-content: space-between;
     }
 
     li{ 
@@ -65,7 +65,7 @@ ul{
     }
 
     nav{
-        width: 100%;
+        max-width: 960px;
         margin-left: auto;
     }
 
