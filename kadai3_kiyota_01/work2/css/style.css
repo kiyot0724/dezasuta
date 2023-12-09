@@ -36,8 +36,7 @@ li {
 }
 
 .item-list {
-  width: 960px;
-  max-width: 100%;
+  max-width: 960px;
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -45,7 +44,7 @@ li {
 }
 
 .item-list .item {
-width: 400px;
+width: 31.9%;
 max-width: 100%;
 margin: 0;
 padding: 0;
@@ -84,7 +83,7 @@ background: #fff;
 }
 
 .item-list .item .description{
-  margin: 5px 0 0;
+  margin: 5px 10px;
   padding: 0;
   font-size: 16px;
 }
