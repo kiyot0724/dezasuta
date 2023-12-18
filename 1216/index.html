@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQueryを学ぼう</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <style>
+        .btn {
+            background-color: blue;
+            color: #fff;
+            width: 300px;
+            height: 40px;
+            cursor: pointer;
+            text-align: center;
+            border-radius: 30px;
+        }
+
+        .btn.red {
+            background-color: red;
+            font-weight: bold;
+            width: 200px;
+        }
+    </style>
+
+    <p>こんにちは</p>
+    <h2>タイトルです</h2>
+
+    <div class="btn">ボタン</div>
+    <script>
+        $(function () {
+            $("p").css("color", "#f00")
+            $("p").hide(1000);
+            $("p").show(1000);
+            $("h2").css("color", "#f00")
+        });
+
+        $('.btn').on('click', function () {
+            $('.title').fadeToggle();
+            $('.btn').toggleClass('red');
+        });
+    </script>
+</body>
+
+</html>
