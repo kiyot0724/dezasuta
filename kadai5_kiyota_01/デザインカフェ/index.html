@@ -53,16 +53,10 @@
         </div>
     </header>
 
-    <script>
-        $('.hamberger').on('click', function () {
-            $('.sp__nav').fadeToggle();
-            $('.hamberger').toggleClass('open');
-        });</script>
-
     <div class="text">Have a happy day From a cup of coffee.</div>
     <h1 class="first-text">ハッピーに溢れる1日を<br>
         1杯のコーヒーから。</h1>
-    <p class="second-text">毎日を丁寧に大切に過ごしたい。<br class="sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br class="sp">
+    <p class="second-text">毎日を丁寧に大切に過ごしたい。<br class="sp">だからこそ一杯一杯丁寧にコーヒーを入れ<br>
         足を運んでくれるお客さんには落ち着く空間と<br class="sp">こだわりのコーヒーを提供したい。</p>
 
     <section id="about">
@@ -81,8 +75,8 @@
 
     <!-- SP用 -->
     <div class="sp_about">
-        <h2><img src="./images/about_us@2x.png" alt="aboutus"></h2>
-        <div class="sp_about-main"><img src="./images/pc_about-100.jpg" alt="コーヒーの画像"></div>
+        <div class="sp_about-logo"><img src="./images/about_us@2x.png" alt="aboutus"></div>
+        <div class="sp_about-main"><img src="./images/about_us@2x-100.jpg" alt="コーヒーの画像"></div>
         <p class="sp_about-text2">私たちが提供する<br>
             こだわりのコーヒー</p>
         <p class="sp_about-text3">
@@ -114,17 +108,14 @@
 
     <section id="gallery">
         <div class="gallery-logo"><img src="./images/gallery@2x.png" alt="gallery"></div>
-        <p><img src="./images/pc_gallary_01-100.jpg" alt=""><img src="./images/pc_gallary_02-100.jpg" alt=""><img
-                src="./images/pc_gallary_03-100.jpg" alt=""><img src="./images/pc_gallary_04-100.jpg" alt=""><img
-                src="./images/pc_gallary_05-100.jpg" alt=""></p>
-    </section>
-
-    <!-- SP用 -->
-    <div class="sp_gallery">
-        <div class="sp_gallery-logo"><img src="./images/gallery@2x.png" alt="gallery"></div>
-        <p class="sp_gallery"><img src="./images/pc_gallary_01-100.jpg" alt="">
+        <p>
+            <img src="./images/pc_gallary_01-100.jpg" alt="" class="sp_g">
+            <img src="./images/pc_gallary_02-100.jpg" alt="" class="sp_g">
+            <img src="./images/pc_gallary_03-100.jpg" alt="" class="">
+            <img src="./images/pc_gallary_04-100.jpg" alt="" class="sp_g">
+            <img src="./images/pc_gallary_05-100.jpg" alt="" class="sp_g">
         </p>
-    </div>
+    </section>
 
 
     <section id="event">
@@ -146,27 +137,6 @@
             </ul>
         </div>
     </section>
-
-    <!-- SP用 -->
-    <div class="sp_event">
-        <div class="sp_event-logo"><img src="images/event@2x.png" alt="event"></div>
-        <div class="sp_event-inner">
-            <ul>
-                <li>
-                    <span class="sp_event-date">2020.06.23</span>
-                    <p><a href="">7月はイベント出店のため0/0・・・</a></p>
-                </li>
-                <li>
-                    <span class="sp_event-date">2020.03.15</span>
-                    <p><a href="">春の新商品新発売。話題のあのブランド・・・</a></p>
-                </li>
-                <li>
-                    <span class="sp_event-date">2020.02.06</span>
-                    <p><a href="">コーヒーの日で30％OFFイベントを・・・</a></p>
-                </li>
-            </ul>
-        </div>
-    </div>
 
     <section id="access">
         <div class="access-logo"><img src="./images/access@2x.png" alt="access"></div>
@@ -190,6 +160,13 @@
         <p class="totop"><a href=""><img src="./images/to_top@2x.png" alt="totop"></a>
         </p>
     </footer>
+
+
+    <script>
+        $('.hamberger').on('click', function () {
+            $('.sp__nav').fadeToggle();
+            $('.hamberger').toggleClass('open');
+        });</script>
 </body>
 
 </html>
