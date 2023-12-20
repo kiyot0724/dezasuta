@@ -403,14 +403,14 @@ footer{
 
     .text{
         text-align: center; 
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-feature-settings: "palt";
         margin: 60px 0 40px 0;
     }
     
     .first-text{
         text-align: center;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: lighter;
         line-height: 1.1;
         letter-spacing: 0.1em;
@@ -419,7 +419,7 @@ footer{
     
     .second-text{
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.8rem;
         padding: 30px; 
         line-height: 2.0;
         letter-spacing: 0.3em;
@@ -536,11 +536,12 @@ footer{
     #event li{
         display: block;
         text-align: left;
-        gap: 20px;
+        gap: 30px;
     }
 
     .event-inner{
         width: 89%;
+        border: 1px solid #4F260B;
     }
 
 
@@ -548,6 +549,7 @@ footer{
         padding: 0;
         font-size: 1rem;
         padding-left: 10px;
+        line-height: 1.5;    
     }
 
 
@@ -583,7 +585,7 @@ footer{
     
     .footer__inner p{
         text-align: left;
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding-left: 30px;
         padding-top: 50px;
     }
@@ -592,8 +594,15 @@ footer{
         width: 100%;
         background-color: #fff;
         text-align: center;
-        font-size: 1rem;
+        font-size: 0.5rem;
         padding: 50px 0 50px 0;
+    }
+
+    .totop{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        width: 100px;
     }
     
 }
