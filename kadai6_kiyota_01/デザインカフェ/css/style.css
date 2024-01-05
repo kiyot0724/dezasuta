@@ -249,6 +249,7 @@ transform: rotate(45deg);
 
 .slick-prev {
 left: 26px;
+z-index: 9999;
 }
 .slick-prev::after {
 left: 360px;
