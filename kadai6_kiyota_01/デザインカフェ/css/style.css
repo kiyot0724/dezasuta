@@ -190,6 +190,7 @@ body{
 }
 
 .gallery_slider {
+    display: flex;
     width: 100%;
 }
 

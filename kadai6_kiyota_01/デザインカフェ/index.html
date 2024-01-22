@@ -9,10 +9,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-
+    <!-- <link rel="stylesheet" href="css/lightbox.css"> -->
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="js/lightbox-plus-jquery.min.js"></script> -->
+    <link rel="stylesheet" href="css/lightbox.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/lightbox.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -122,13 +126,20 @@
         <div class="gallery-logo"><img src="./images/gallery@2x.png" alt="gallery"></div>
 
         <div class="gallery_slider">
-            <div class="gallery_slider_img"><img src="./images/pc_gallary_01-100.jpg" alt="" class="sp_g"></div>
-            <div class="gallery_slider_img"><img src="./images/pc_gallary_02-100.jpg" alt="" class="sp_g"></div>
-            <div class="gallery_slider_img"><img src="./images/pc_gallary_03-100.jpg" alt="" class="sp_g"></div>
-            <div class="gallery_slider_img"><img src="./images/pc_gallary_04-100.jpg" alt="" class="sp_g"></div>
-            <div class="gallery_slider_img"><img src="./images/pc_gallary_05-100.jpg" alt="" class="sp_g"></div>
-            <div class="gallery_slider_img"><img src="./images/pc_gallary_03-100.jpg" alt="" class="sp_g"></div>
-        </div>
+            <a href="images/pc_gallary_01-100.jpg" data-lightbox="img01" data-title="コーヒーの画像"><img
+                    src="./images/pc_gallary_01-100.jpg" alt="コーヒーの画像" class="sp_g"></a>
+            <a href="images/pc_gallary_02-100.jpg" data-lightbox="img02" data-title="内観"><img
+                    src="./images/pc_gallary_02-100.jpg" alt="内観" class="sp_g"></a>
+            <a href="images/pc_gallary_03-100.jpg" data-lightbox="img03" data-title="内観"><img
+                    src="./images/pc_gallary_03-100.jpg" alt="内観" class="sp_g"></a>
+            <a href="images/pc_gallary_04-100.jpg" data-lightbox="img04" data-title="コーヒー豆の画像"><img
+                    src="./images/pc_gallary_04-100.jpg" alt="コーヒー豆の画像" class="sp_g"></a>
+            <a href="images/pc_gallary_05-100.jpg" data-lightbox="img05" data-title="内観"><img
+                    src="./images/pc_gallary_05-100.jpg" alt="内観" class="sp_g">
+            </a>
+            <a href="images/pc_gallary_03-100.jpg" data-lightbox="img03" data-title="内観"><img
+                    src="./images/pc_gallary_03-100.jpg" alt="内観" class="sp_g">
+            </a>
 
     </section>
 
@@ -177,6 +188,7 @@
 
 
     <script>
+
         $(function () {
             $('.slider').slick({
                 autoplayspeed: 2000,
@@ -207,6 +219,12 @@
                     },
                 ],
             });
+            $(function () {
+                $('.gallery_slider').lightbox({
+                    'resizeDuration': 400,
+                    'wrapAround': true
+                })
+            })
         });
 
     </script>
