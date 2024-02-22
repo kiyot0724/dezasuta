@@ -124,7 +124,7 @@ body{
     display: flex;
     text-align: right;
     position: absolute;
-    right: 0;
+    right: 30px;
     top: 129px;
     gap: 20px;
     font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
@@ -166,6 +166,7 @@ dt.works_list {
     font-size: 14px;
     line-height: 42px;
     margin-right: 24px;
+    margin-left: 30px;
 
 }
 dd.works_text {
@@ -231,5 +232,210 @@ dd.works_text {
     font-size: 10px;
     margin-top: 120px;
     text-align:center;
+}
+
+.sp__nav, .hamberger{
+    display: none;
+}
+
+.workspage_menu_sp{
+    display: none;
+}
+
+
+@media screen and (max-width:768px) {
+
+    #header_p{
+        display: none;
+    }
+    
+    .hamberger{
+        display: block;
+        cursor: pointer;
+        height: 30px;
+        width: 33px;
+        z-index: 9999;
+        right: 0;
+    }
+    .hamberger span{
+        width: 33px;
+        height: 3px;
+        background-color: #2e1911;
+        position: absolute;
+        content: "";
+        top: 20px;
+        right: 10px;
+        z-index: 9999;
+        transition: 0.5s;
+    }
+    
+    .hamberger span::before,
+    .hamberger span::after{
+        position: absolute;
+        content:"";
+        width: 33px;
+        height: 3px;
+        background-color: #2e1911;
+        transition: 0.5s;
+    }
+    
+    .hamberger span::before{
+        top: -10px;
+    }
+    .hamberger span::after{
+        top: 10px;
+    }
+    
+    
+    .hamberger.open span{
+        background-color: transparent;
+    }
+    .hamberger.open span::before,
+    .hamberger.open span::after{
+        top: 0;
+    }
+    
+    .hamberger.open span::before{
+        transform: rotate(45deg);
+    }
+    .hamberger.open span::after{
+        transform: rotate(-45deg);
+    }
+    
+    #header_sp{
+    height: 667px;
+    background-image: url(../image/2x/main_sp@2x-100.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    }
+    
+    #header__sp{
+        width: 100%;
+        position: relative; 
+        }
+    
+    .sp__nav{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.48);
+    }
+    
+    .sp__nav ul{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    .sp__nav li{
+    padding: 16px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    z-index: 9999;
+    }
+
+    .workspage_menu{
+        display: none;
+    }
+
+    .workspage_menu_sp{
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .workspage_menu_sp a{
+        font-size: 13px;
+        letter-spacing: 0.1em;
+        font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+
+    .workspage_title span{
+        font-size: 14px;
+        line-height: 1.956;
+        text-align: center;
+        color: #968c88;
+    }
+    
+    .workspage_title{
+        margin: 30px 0 40px 0;
+        font-size: 21px;
+        line-height: 1.3636;
+        letter-spacing: 0.077em;
+        text-align: center;
+    }
+    
+    dl.workspage-summary {
+        flex-flow: column;
+        margin: 200px 0 200px 0;
+        text-align: center;
+    }
+    
+    dt.works_list {
+        display: block;
+        width: 100%;
+        height: 42px;
+        font-size: 15px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+        border-radius: 3px 3px 3px 3px;
+        align-items: center;
+        border: #968c88 solid 1px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 42px;
+        margin-right: 24px;
+        margin-left: 0;
+    
+    }
+    dd.works_text {
+        margin-bottom: 30px;
+        vertical-align: baseline;
+        line-height: 42px;
+        text-align: center;
+        margin-left: 0;
+        font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+    
+    #fotter{
+        display: block;
+        width: 100%;
+        background-image: url(../image/2x/footer_sp@2x.png);
+        background-size: cover;
+        position: relative;
+        text-align: center;
+    }
+    
+    
+    .fotter_menu{
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+    
+    .fotter_menu ul{
+        display: block;
+        justify-content: space-between;
+        gap: 5%;
+    }
+    
+    .fotter_menu li{
+        font-size: 16px;
+        padding: 22px;
+        font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;   
+    }
+    
+    .fotter_menu p{
+        font-size: 10px;
+        margin-top: 120px;
+        text-align:center;
+    }      
+
+    .backnext a{
+        padding: 10px;
+    }
+
 }
 
