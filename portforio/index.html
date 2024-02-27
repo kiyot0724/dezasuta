@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
     <title>Portforio</title>
 </head>
 
@@ -16,7 +18,7 @@
             <div class="header__inner">
                 <h1 class="logo">
                 </h1>
-                <nav>
+                <nav class="gnav">
                     <ul>
                         <li><a href="#header">ホーム
                                 <span>Home</span>
@@ -48,11 +50,12 @@
 
             <nav class="sp__nav">
                 <ul>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#menu">MENU</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#event">EVENT</a></li>
-                    <li><a href="#access">ACCESS</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="contact.html">Concept</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
                 </ul>
             </nav>
         </header>
@@ -60,20 +63,40 @@
 
         <section id="concept">
             <div class="concept_wrap">
-                <h1 class="concept_text1">
-                    秘訣は聞き役に<br>徹すること
-                </h1>
-                <div class="concept_text2">
-                    飛鳥時代の偉人、聖徳太子。<br>
-                    別名「豊聡耳」と呼ばれるほど<br>
-                    聞くことを大事にしていたそうです。<br>
+                <div class="concept_text1">
+                    <span>秘</span>
+                    <span>訣</span>
+                    <span>は</span>
+                    <span>聞</span>
+                    <span>き</span>
+                    <span>役</span>
+                    <span>に</span>
                     <br>
-                    聖徳太子のように<br>
-                    お客様の一番の「聞き役」でありたい<br>
-                    一緒にデザインを作りげていくような<br>
-                    デザイナーになりたい。<br>
-                    そんな想いを込めて<br>
-                    当サイトを作成いたしました。
+                    <span>徹</span>
+                    <span>す</span>
+                    <span>る</span>
+                    <span>こ</span>
+                    <span>と</span>
+                </div>
+                <div class="concept_text2">
+                    <span class="lead1">飛鳥時代の偉人、聖徳太子。</span>
+                    <br>
+                    <span class="lead1">別名「豊聡耳」と呼ばれるほど</span>
+                    <br>
+                    <span class="lead1">聞くことを大事にしていたそうです。</span>
+                    <br>
+                    <br>
+                    <span class="lead2">聖徳太子のように</span>
+                    <br>
+                    <span class="lead2">お客様の一番の「聞き役」でありたい</span>
+                    <br>
+                    <span class="lead2">一緒にデザインを作りげていくような</span>
+                    <br>
+                    <span class="lead2">デザイナーになりたい。</span>
+                    <br>
+                    <span class="lead2">そんな想いを込めて</span>
+                    <br>
+                    <span class="lead2">当サイトを作成いたしました。</span>
                 </div>
             </div>
             <div class="concept_logo"><a href=""><img src="image/2x/logo2@2x.png" alt=""></a></div>
@@ -83,10 +106,10 @@
             <div class="about_haikei">
                 <div class="about_wrap">
                     <div class="about_textarea">
-                        <div class="about_title">About me<br>
+                        <div class="about_title js-fade">About me<br>
                             <span>私について</span>
                         </div>
-                        <div class="about_text">
+                        <div class="about_text js-fade">
                             初めまして、「飛鳥」と言います。<br>
                             鹿児島県に住んでいます。<br><br>
 
@@ -95,9 +118,9 @@
                             Webデザインを通して、<br>
                             たくさんの人と繋がりが出来れば嬉しいです。<br>
                         </div>
-                        <div class="viewmore"><a href="about.html" class="btnarrow5">詳しく見る</a></div>
+                        <div class="viewmore js-fade"><a href="about.html" class="btnarrow5">詳しく見る</a></div>
                     </div>
-                    <div class="about_img2"><img src="./image/2x/about_img2@2x-100.jpg" alt="自己紹介写真"></div>
+                    <div class="about_img2 js-fade"><img src="./image/2x/about_img2@2x-100.jpg" alt="自己紹介写真"></div>
                 </div>
             </div>
         </section>
@@ -106,11 +129,11 @@
             <div class="about_haikei_sp">
                 <div class="about_wrap_sp">
                     <div class="about_textarea_sp">
-                        <div class="about_title">About me<br>
+                        <div class="about_title js-fade">About me<br>
                             <span>私について</span>
                         </div>
-                        <div class="about_img2"><img src="./image/2x/about_img2@2x-100.jpg" alt="自己紹介写真"></div>
-                        <div class="about_text_sp">
+                        <div class="about_img2 js-fade"><img src="./image/2x/about_img2@2x-100.jpg" alt="自己紹介写真"></div>
+                        <div class="about_text_sp js-fade">
                             初めまして、「飛鳥」と言います。<br>
                             鹿児島県に住んでいます。<br><br>
 
@@ -119,7 +142,7 @@
                             Webデザインを通して、<br>
                             たくさんの人と繋がりが出来れば嬉しいです。<br>
                         </div>
-                        <div class="viewmore"><a href="about.html" class="btnarrow5">詳しく見る</a></div>
+                        <div class="viewmore js-fade"><a href="about.html" class="btnarrow5">詳しく見る</a></div>
                     </div>
                 </div>
             </div>
@@ -127,45 +150,66 @@
 
         <section id="works">
             <div class="works_wrap">
-                <div class="works_title">Works<br>
+                <div class="works_title js-fade">Works<br>
                     <span>制作物</span>
                 </div>
-                <div class="works_img">
-                    <a href=""><img src="image/2x/works1_1@2x-100.jpg" alt=""></a>
-                    <p class="title_sp">美容室のLP（架空）</p>
-                    <span class="title_sp">Webデザイン</span></a>
-                    <a href=""><img src="image/2x/work2@2x-100.jpg" alt=""></a>
-                    <p class="title_sp">ハンバーガーの販促バナー（架空）</p>
-                    <span class="title_sp">バナー</span></a>
-                    <a href=""><img src="image/2x/works3@2x-100.jpg" alt=""></a>
-                    <p class="title_sp">スマホの料金プラン案内（架空）</p>
-                    <span class="title_sp">バナー</span></a>
+                <div class="works_img js-fade">
+                    <div class="workimg"><a href=""><img src="image/2x/works1_1@2x-100.jpg" alt="制作物"></a>
+                        <div class="hover__mask">
+                            <p class="hover_mask">
+                                LIFE hair design 様
+                                <br>美容室のLP
+                            </p>
+                        </div>
+                        <p class="title_sp">美容室のLP（架空）</p>
+                        <span class="title_sp">Webデザイン</span></a>
+                    </div>
+                    <div class="workimg"><a href=""><img src="image/2x/work2@2x-100.jpg" alt="制作物"></a>
+                        <div class="hover__mask">
+                            <p class="hover_mask">
+                                ハンバーガーの販促バナー（架空）
+                                <br>バナー
+                            </p>
+                        </div>
+                        <p class="title_sp">ハンバーガーの販促バナー（架空）</p>
+                        <span class="title_sp">バナー</span></a>
+                    </div>
+                    <div class="workimg"><a href=""><img src="image/2x/works3@2x-100.jpg" alt="制作物"></a>
+                        <div class="hover__mask">
+                            <p class="hover_mask">
+                                スマホの料金プラン案内（架空）
+                                <br>バナー
+                            </p>
+                        </div>
+                        <p class="title_sp">スマホの料金プラン案内（架空）</p>
+                        <span class="title_sp">バナー</span></a>
+                    </div>
                 </div>
-                <div class="viewmore"><a href="works.html" class="btnarrow5">詳しく見る</a></div>
+                <div class="viewmore js-fade"><a href="works.html" class="btnarrow5">詳しく見る</a></div>
             </div>
         </section>
 
         <section id="skills">
             <div class="skills_wrap">
-                <div class="skills_title">Skills<br>
+                <div class="skills_title js-fade">Skills<br>
                     <span>できること</span>
                 </div>
                 <div class="skills">
-                    <div class="skill_web">
+                    <div class="skill_web js-fade">
                         <p><img src="image/2x/web@2x.png" alt=""></p>
                         <p class="skill_title2">Webデザイン</p>
                         <p class="skill_text">見る人が理解しやすいデザインを心がけています。ツールを使用し、ワイヤーフレーム・デザインカンプを１から作ることが可能です。</p>
                         <hr color="#968c88" noshade size="0.1">
                         <p class="skill_text">使用ツール : Illustrator/Photoshop</p>
                     </div>
-                    <div class="skill_pc">
+                    <div class="skill_pc js-fade">
                         <p><img src="image/2x/pc_1@2x.png" alt=""></p>
                         <p class="skill_title2">コーディング</p>
                         <p class="skill_text">HTML/CSSを用いて、サイトを構築することが出来ます。またJavaScriptを使用し、デザインに動きをつけることも可能です。</p>
                         <hr color="#968c88" noshade size="0.1">
                         <p class="skill_text">使用ツール : HTML/CSS/JavaScript</p>
                     </div>
-                    <div class="skill_ear">
+                    <div class="skill_ear js-fade">
                         <p><img src="image/2x/ear@2x.png" alt=""></p>
                         <p class="skill_title2">特 徴</p>
                         <p class="skill_text">「聞くこと」を大事にしています。会話の中で正確に情報を共有し、課題に対し、より効果的なデザインを提案をできるよう尽力いたします。</p>
@@ -178,10 +222,10 @@
 
         <section id="contact">
             <div class="contact_wrap">
-                <div class="contact_title">Contact<br>
+                <div class="contact_title js-fade">Contact<br>
                     <span>お問い合わせ</span>
                 </div>
-                <div class="contact_content">
+                <div class="contact_content js-fade">
                     <p><img src="image/2x/mail@2x.png" alt=""></p>
                     <p class="contact_text">お気軽にご連絡ください！</p>
                     <p class="contact_box"><a href="contact.html">お問い合わせページへ</a></p>
@@ -201,6 +245,21 @@
                 <p>©️ Asuka Kiyota</p>
             </div>
         </section>
+
+        <script>
+
+            $(function () {
+                $(".js-fade").on("inview", function () {
+                    $(this).addClass("inview");
+                });
+            });
+
+
+            $('.hamberger').on('click', function () {
+                $('.sp__nav').fadeToggle();
+                $('.hamberger').toggleClass('open');
+            });
+        </script>
     </body>
 
 </html>

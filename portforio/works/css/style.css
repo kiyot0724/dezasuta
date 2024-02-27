@@ -176,6 +176,14 @@ dd.works_text {
     font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     }
 
+dd.works_text_pc {
+    margin-bottom: 30px;
+    vertical-align: baseline;
+    line-height: 42px;
+    font-family:"游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    }
+    
+
 .works_img5{
     margin-top: 100px;
     text-align: center;

@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
     <title>Concept</title>
 </head>
 
@@ -16,7 +18,7 @@
             <div class="header__inner_p">
                 <h1 class="logo">
                 </h1>
-                <nav>
+                <nav class="gnav">
                     <ul>
                         <li><a href="index.html">ホーム
                                 <span>Home</span>
@@ -56,12 +58,12 @@
 
 
         <section id="concept_p">
-            <div class="concept_inner">
+            <div class="concept_inner js-fade">
                 <div class="concept_title">Concept<br>
                     <span>概念</span>
                 </div>
             </div>
-            <div class="concept_wrap1">
+            <div class="concept_wrap1 js-fade">
                 <div class="concept_main">
                     <img src="image/2x/concept_logo@3x.png" alt="">
                 </div>
@@ -82,7 +84,7 @@
                 </div>
             </div>
 
-            <div class="concept_wrap2">
+            <div class="concept_wrap2 js-fade">
                 <div class="concept_text3">
                     <div>
                         <h3>Background</h3>
@@ -105,7 +107,7 @@
 
             <section id="concept_sp">
                 <div class="concept_haikei_sp">
-                    <div class="concept_wrap_sp">
+                    <div class="concept_wrap_sp js-fade">
                         <div class="concept_text_sp">
                             <h2>background</h2>
                             <br>
@@ -150,6 +152,22 @@
                 <p>©️ Asuka Kiyota</p>
             </div>
         </section>
+
+        <script>
+
+            $(function () {
+                $(".js-fade").on("inview", function () {
+                    $(this).addClass("inview");
+                });
+            });
+
+
+            $('.hamberger').on('click', function () {
+                $('.sp__nav').fadeToggle();
+                $('.hamberger').toggleClass('open');
+            });
+        </script>
+
 
     </body>
 
