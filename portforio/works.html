@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./css/style.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="./js/jquery.inview.min.js"></script>
+    <script src="./js/mixitup.min.js"></script>
+    <script type="text/javascript"></script>
     <title>Works</title>
 </head>
 
@@ -47,11 +49,11 @@
 
             <nav class="sp__nav">
                 <ul>
-                    <li><a href="#about">ABOUT US</a></li>
-                    <li><a href="#menu">MENU</a></li>
-                    <li><a href="#gallery">GALLERY</a></li>
-                    <li><a href="#event">EVENT</a></li>
-                    <li><a href="#access">ACCESS</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="concept.html">Concept</a></li>
+                    <li><a href="about.html">About me</a></li>
+                    <li><a href="works.html">Works</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
                 </ul>
             </nav>
         </header>
@@ -62,56 +64,58 @@
                 <div class="works_title">Works<br>
                     <span>制作物</span>
                 </div>
-                <div class="workspage_menu">
-                    <a href="">All</a>
-                    <a href="">Webデザイン</a>
-                    <a href="">バナー</a>
-                    <a href="">その他</a>
+                <div class="workspage_list">
+                    <div class="filter" date-filter="all">All</div>
+                    <div class="filter" date-filter="web">Webデザイン</div>
+                    <div class="filter" date-filter="banner">バナー</div>
+                    <div class="filter" date-filter="other">その他</div>
                 </div>
 
-                <div class="workspage_menu_sp">
-                    <a href="">All</a>
-                    <a href="">Webデザイン</a>
-                    <a href="">バナー</a>
-                    <a href="">その他</a>
+                <div class="workspage_list_sp">
+                    <div class="filter" date-filter="all">All</div>
+                    <div class="filter" date-filter="web">Webデザイン</div>
+                    <div class="filter" date-filter="banner">バナー</div>
+                    <div class="filter" date-filter="other">その他</div>
                 </div>
 
                 <hr color="#efe6ce" noshade size="0.1">
-                <div class="workspage_img">
-                    <div class="works_content"><a href="works/worksbanner.html"><img src="image/2x/works1_2@2x-100.jpg"
-                                alt=""></a>
-                        <p>スマホの料金プラン案内（架空）</p>
-                        <span>バナー</span>
-                    </div>
-                    <div class="works_content"><a href="works/worksbanner2.html"><img src="image/2x/works2_1@2x-100.jpg"
-                                alt=""></a>
-                        <p>旅行サイトアプリの宣伝バナー（架空）</p>
-                        <span>バナー</span>
-                    </div>
-                    <div class="works_content"><a href="works/worksbanner3-2.html"><img
-                                src="image/2x/works3_1@2x-100.jpg" alt=""></a>
-                        <p>ハンバーガーの販促バナー（架空）</p>
-                        <span>バナー</span>
-                    </div>
-                    <div class="works_content"><a href="works/worksbanner3-1.html"><img
-                                src="image/2x/works3_2@2x-100.jpg" alt=""></a>
-                        <p>ハンバーガーの販促バナー（架空）</p>
-                        <span>バナー</span>
-                    </div>
-                    <div class="works_content"><a href="works/work4.html"><img src="image/2x/works4@2x-100.jpg"
-                                alt=""></a>
-                        <p>ワーキングスペースのLP（架空）</p>
-                        <span>Webデザイン</span>
-                    </div>
-                    <div class="works_content"><a href="works/works5.html"><img src="image/2x/works5_1@2x-100.jpg"
-                                alt=""></a>
-                        <p>美容室のLP（架空）</p>
-                        <span>Webデザイン</span>
-                    </div>
-                    <div class="works_content"><a href="works/works6.html"><img src="image/2x/works6@2x-100.jpg"
-                                alt=""></a>
-                        <p>カフェのWebサイト（架空）</p>
-                        <span>Webデザイン</span>
+                <div id="container">
+                    <div class="workspage_img">
+                        <div class="works_content_banner"><a href="works/worksbanner.html"><img
+                                    src="image/2x/works1_2@2x-100.jpg" alt=""></a>
+                            <p>スマホの料金プラン案内（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="works_content_banner"><a href="works/worksbanner2.html"><img
+                                    src="image/2x/works2_1@2x-100.jpg" alt=""></a>
+                            <p>旅行サイトアプリの宣伝バナー（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="works_content_banner"><a href="works/worksbanner3-2.html"><img
+                                    src="image/2x/works3_1@2x-100.jpg" alt=""></a>
+                            <p>ハンバーガーの販促バナー（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="works_content_banner"><a href="works/worksbanner3-1.html"><img
+                                    src="image/2x/works3_2@2x-100.jpg" alt=""></a>
+                            <p>ハンバーガーの販促バナー（架空）</p>
+                            <span>バナー</span>
+                        </div>
+                        <div class="works_content_web"><a href="works/work4.html"><img src="image/2x/works4@2x-100.jpg"
+                                    alt=""></a>
+                            <p>ワーキングスペースのLP（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="works_content_web"><a href="works/works5.html"><img
+                                    src="image/2x/works5_1@2x-100.jpg" alt=""></a>
+                            <p>美容室のLP（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
+                        <div class="works_content_web"><a href="works/works6.html"><img src="image/2x/works6@2x-100.jpg"
+                                    alt=""></a>
+                            <p>カフェのWebサイト（架空）</p>
+                            <span>Webデザイン</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -142,6 +146,13 @@
                 $('.sp__nav').fadeToggle();
                 $('.hamberger').toggleClass('open');
             });
+
+            $(function () {
+                var containerEl = document.querySelector('.workspage_list');
+                var mixer = mixitup(containerEl);
+            });
+        </script>
+
         </script>
     </body>
 
