@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/jquery.inview.min.js"></script>
     <title>works</title>
 </head>
 
@@ -99,6 +101,21 @@
                 <p>©️ Asuka Kiyota</p>
             </div>
         </section>
+
+        <script>
+
+            $(function () {
+                $(".js-fade").on("inview", function () {
+                    $(this).addClass("inview");
+                });
+            });
+
+
+            $('.hamberger').on('click', function () {
+                $('.sp__nav').fadeToggle();
+                $('.hamberger').toggleClass('open');
+            });
+        </script>
     </body>
 
 </html>

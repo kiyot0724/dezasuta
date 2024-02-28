@@ -856,6 +856,7 @@ body{
     width:calc(100%/3);
     flex-basis: 30%;
     margin-bottom: 30px;
+    position: relative;
     }
 
     .works_content_banner p,
@@ -872,6 +873,28 @@ body{
     line-height: 1.333;
     color: #968c88;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;   
+}
+
+.hover_mask2 {
+    align-items: center; 
+    background: rgba(0, 0, 0, .5); 
+    bottom: 0;
+    color: #fff; 
+    display: flex; 
+    height: auto;
+    justify-content: center; 
+    left: 0;
+    opacity: 0; 
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity.6s ease;
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+}
+.hover_mask2:hover {
+    opacity: 1; 
 }
 
 #contactpage{
@@ -959,7 +982,8 @@ input[type="checkbox"]:checked:before {
     content: '';
 }
 
-.sp__nav, .hamberger{
+.sp__nav, 
+.hamberger{
     display: none;
 }
 

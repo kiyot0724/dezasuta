@@ -95,6 +95,31 @@ body{
     font-size: 11px;
     color: #6d5e58;
 }
+
+.gnav a {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #2e1911;
+    text-decoration: none;
+}
+
+.gnav a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #2e1911;
+    transform: translate(-100%, 0);
+    transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s;
+    content: "";
+}
+
+.gnav a:hover:after {
+    transform: translate(0, 0);
+}
+
 .works_title{
     font-size: 23px;
     line-height: 1.2;
@@ -213,7 +238,8 @@ dd.works_text_pc {
 #fotter{
     display: block;
     width: 100%;
-    background-image: url(../image/2x/footer_sp@2x.png);
+    height: 268px;
+    background-image: url(../image/2x/fotter_haikei@2x.png);
     background-size: cover;
     height: auto;
     position: relative;

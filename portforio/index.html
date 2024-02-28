@@ -236,7 +236,7 @@
         </section>
 
 
-        <p class="totop"><a href=""><img src="./image/2x/topbtn19@2x.png" alt="totop"></a>
+        <p class="totop js-to-top"><a href=""><img src="./image/2x/topbtn19@2x.png" alt="totop"></a>
         </p>
 
         <section id="fotter">
@@ -265,6 +265,27 @@
                 $('.sp__nav').fadeToggle();
                 $('.hamberger').toggleClass('open');
             });
+
+            $(function () {
+                // スクロールしたら「トップに戻る」ボタンが表示される
+                const toTopButton = $(".js-to-top");
+                const scrollHeight = 200;
+                toTopButton.hide();
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 100) {
+                        toTopButton.fadeIn();
+                    } else {
+                        toTopButton.fadeOut();
+                    }
+                });
+
+                // 「トップに戻る」ボタンをクリックしたらスクロールで戻る
+                toTopButton.click(function () {
+                    $("body,html").animate({ scrollTop: 0 }, 800);
+                    return false;
+                });
+            });
+
         </script>
     </body>
 
