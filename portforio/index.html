@@ -16,7 +16,7 @@
     <body>
         <header id="header">
             <div class="header__inner">
-                <h1 class="logo1"><img src="image/2x/2x/title@2x.png" alt="">
+                <h1 class="logo1"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
                 </h1>
                 <nav class="gnav">
                     <ul>
@@ -44,7 +44,7 @@
         </header>
 
         <header id="header_sp">
-            <h1 class="logo1_sp"><img src="image/2x/2x/title@2x.png" alt="">
+            <h1 class="logo1_sp"><img src="image/2x/2x/title@2x.png" alt="ポートフォリオ">
             </h1>
             <div class="hamberger">
                 <span></span>
@@ -81,27 +81,28 @@
                     <span>と</span>
                 </div>
                 <div class="concept_text2">
-                    <span class="lead1">飛鳥時代の偉人、聖徳太子。</span>
+                    <span class="lead1 fadein">飛鳥時代の偉人、聖徳太子。</span>
                     <br>
-                    <span class="lead1">別名「豊聡耳」と呼ばれるほど</span>
+                    <span class="lead1 fadein">別名「豊聡耳」と呼ばれるほど</span>
                     <br>
-                    <span class="lead1">聞くことを大事にしていたそうです。</span>
+                    <span class="lead1 fadein">聞くことを大事にしていたそうです。</span>
                     <br>
                     <br>
-                    <span class="lead2">聖徳太子のように</span>
+                    <span class="lead2 fadein">聖徳太子のように</span>
                     <br>
-                    <span class="lead2">お客様の一番の「聞き役」でありたい</span>
+                    <span class="lead2 fadein">お客様の一番の「聞き役」でありたい</span>
                     <br>
-                    <span class="lead2">一緒にデザインを作りげていくような</span>
+                    <span class="lead2 fadein">一緒にデザインを作りげていくような</span>
                     <br>
-                    <span class="lead2">デザイナーになりたい。</span>
+                    <span class="lead2 fadein">デザイナーになりたい。</span>
                     <br>
-                    <span class="lead2">そんな想いを込めて</span>
+                    <span class="lead2 fadein">そんな想いを込めて</span>
                     <br>
-                    <span class="lead2">当サイトを作成いたしました。</span>
+                    <span class="lead2 fadein">当サイトを作成いたしました。</span>
                 </div>
             </div>
-            <div class="concept_logo"><a href=""><img src="image/2x/logo2@2x.png" alt=""></a></div>
+            <div class="concept_logo js-fade"><a href="./comcept.html"><img src="image/2x/logo2@2x.png" alt="ロゴ"></a>
+            </div>
         </section>
 
         <section id="about">
@@ -260,11 +261,36 @@
                 });
             });
 
+            $(function () {
+                $(window).scroll(function () {
+                    $(".fadein").each(function () {
+                        var position = $(this).offset().top;
+                        var scroll = $(window).scrollTop();
+                        var windowHeight = $(window).height();
+                        if (scroll > position - windowHeight + 200) {
+                            $(function () {
+                                $("fadein").each(function (i) {
+                                    $(this)
+                                        .delay(i * 200)
+                                        .queue(function () {
+                                            $(this).addClass("activ");
+                                        });
+                                });
+                            });
+                        }
+                    });
+                });
+            });
+
+            $(this).addClass("inview");
+
+
 
             $('.hamberger').on('click', function () {
                 $('.sp__nav').fadeToggle();
                 $('.hamberger').toggleClass('open');
             });
+
 
             $(function () {
                 // スクロールしたら「トップに戻る」ボタンが表示される
