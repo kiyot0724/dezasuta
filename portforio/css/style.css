@@ -265,6 +265,10 @@ body{
     text-align: center;
     padding-bottom: 150px;
     width: 100%;
+    background-image: url(../image/2x/tophaikei@2x.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .concept_logo img{
@@ -356,6 +360,7 @@ body{
 .viewmore:hover{
 	background:#2e1911;
 	color:#fff;
+    transition: opacity.6s ease;
 }
 
 .viewmore::before{
@@ -485,6 +490,7 @@ body{
     letter-spacing: 0.15em;
     text-align: center;
     margin-left: 500px;
+    transition: opacity.2s ease;
 }
 
 #skills{
@@ -699,6 +705,7 @@ body{
     padding-left: 28px;
     color: #2e1911;
     position: relative;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .concept_title::before{
@@ -714,6 +721,7 @@ body{
 
 .concept_title span{
     font-size: 16px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .concept_wrap1{
@@ -859,6 +867,7 @@ body{
     padding-left: 28px;
     color: #2e1911;
     position: relative;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .career_title::before{
@@ -874,6 +883,7 @@ body{
 
 .career_title span{
     font-size: 16px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .career_img{
@@ -900,6 +910,7 @@ body{
     padding-left: 28px;
     color: #2e1911;
     position: relative;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .vision_title::before{
@@ -915,6 +926,7 @@ body{
 
 .vision_title span{
     font-size: 16px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
 .vision_wrap{
@@ -1264,6 +1276,19 @@ width: 82px;
 margin: 20px;
 }
 
+#concept{
+    background-image: url(../image/2x/tophaikei_sp@2x.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 15px;
+}
+
+.concept_logo img{
+    width: 125px;
+}
+
 .concept_text1 {
 font-size: 19px;
 line-height: 1.45;
@@ -1294,6 +1319,14 @@ padding-right: 0;
 -webkit-writing-mode: horizontal-tb;
 -ms-writing-mode: horizontal-tb;
 }
+
+.concept_logo {
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom: 150px;
+    background-image: none;
+}
+
 
 #about{
     display: none;
@@ -1547,18 +1580,11 @@ padding-right: 0;
     width: 100%;
 }
 
-.concept_main img {
-    animation: rotate-anime 6s linear infinite;
-}
-@keyframes rotate-anime {
-    0%  {transform: rotate(0);}
-    100%  {transform: rotate(360deg);}
-}
-
 .concept_text h2{
     font-size: 24px;
     line-height: 1.730;
     letter-spacing: 0.045em;
+    padding-top: 50px;
     font-family:"游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
     ;
 }
@@ -1900,7 +1926,7 @@ input[type="checkbox"]:checked:before {
     position: fixed;
     bottom: 550px;
     right: 20px;
-    width: 40px;
+    width: 66px;
 }
 
 #Container .mix{
