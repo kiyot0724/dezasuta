@@ -195,19 +195,19 @@ body{
 	animation: onetxtanime 2s forwards;
 }
 
-.concept_text1 span:nth-child(1){animation-delay: 0.1s;}
-.concept_text1 span:nth-child(2){animation-delay: 0.2s;}
-.concept_text1 span:nth-child(3){animation-delay: 0.3s;}
-.concept_text1 span:nth-child(4){animation-delay: 0.4s;}
-.concept_text1 span:nth-child(5){animation-delay: 0.5s;}
-.concept_text1 span:nth-child(6){animation-delay: 0.6s;}
-.concept_text1 span:nth-child(7){animation-delay: 0.7s;}
-.concept_text1 span:nth-child(8){animation-delay: 0.8s;}
-.concept_text1 span:nth-child(9){animation-delay: 0.9s;}
-.concept_text1 span:nth-child(10){animation-delay: 1.0s;}
-.concept_text1 span:nth-child(11){animation-delay: 1.1s;}
-.concept_text1 span:nth-child(12){animation-delay: 1.2s;}
-.concept_text1 span:nth-child(13){animation-delay: 1.2s;}
+.concept_text1 span:nth-child(1){animation-delay: 1s;}
+.concept_text1 span:nth-child(2){animation-delay: 1.2s;}
+.concept_text1 span:nth-child(3){animation-delay: 1.3s;}
+.concept_text1 span:nth-child(4){animation-delay: 1.4s;}
+.concept_text1 span:nth-child(5){animation-delay: 1.5s;}
+.concept_text1 span:nth-child(6){animation-delay: 1.6s;}
+.concept_text1 span:nth-child(7){animation-delay: 1.7s;}
+.concept_text1 span:nth-child(8){animation-delay: 1.8s;}
+.concept_text1 span:nth-child(9){animation-delay: 1.9s;}
+.concept_text1 span:nth-child(10){animation-delay: 2.0s;}
+.concept_text1 span:nth-child(11){animation-delay: 2.1s;}
+.concept_text1 span:nth-child(12){animation-delay: 2.2s;}
+.concept_text1 span:nth-child(13){animation-delay: 2.3s;}
 
 .lead1{
     opacity: 0;
@@ -219,15 +219,15 @@ body{
     animation: onetxtanime 5s forwards;
 }
 
-.lead1:nth-child(1){animation-delay: 1.3s;}
-.lead1:nth-child(3){animation-delay: 1.4s;}
-.lead1:nth-child(5){animation-delay: 1.5s;}
-.lead2:nth-child(8){animation-delay: 1.7s;}
-.lead2:nth-child(10){animation-delay: 1.8s;}
-.lead2:nth-child(12){animation-delay: 1.9s;}
-.lead2:nth-child(14){animation-delay: 2s;}
-.lead2:nth-child(16){animation-delay: 2.1s;}
-.lead2:nth-child(18){animation-delay: 2.2s;}
+.lead1:nth-child(1){animation-delay: 3s;}
+.lead1:nth-child(3){animation-delay: 3.2s;}
+.lead1:nth-child(5){animation-delay: 3.3s;}
+.lead2:nth-child(8){animation-delay: 3.4s;}
+.lead2:nth-child(10){animation-delay: 3.5s;}
+.lead2:nth-child(12){animation-delay: 3.6s;}
+.lead2:nth-child(14){animation-delay: 3.7s;}
+.lead2:nth-child(16){animation-delay: 3.8s;}
+.lead2:nth-child(18){animation-delay: 3.9s;}
 
 
 @keyframes onetxtanime{
@@ -360,7 +360,7 @@ body{
 .viewmore:hover{
 	background:#2e1911;
 	color:#fff;
-    transition: opacity.6s ease;
+    transition: all 0.5s ease;
 }
 
 .viewmore::before{
@@ -371,7 +371,7 @@ body{
     background-color: #2e1911;
     top: 50%;
     right: -95px;
-    transition: all .2s linear;
+    transition: all 0.3s linear;
 }
 
 .viewmore::after{
@@ -383,15 +383,15 @@ body{
     transform: rotate(45deg);
     top: 14px;
     right: -95px;
-    transition: all .2s linear;
+    transition: all 0.3s linear;
 }
 
 .viewmore:hover::before{
-    right: -100px;
+    right: -110px;
 }
 
 .viewmore:hover::after{
-    right:-100px;
+    right:-110px;
 }
 
 .about_img{
@@ -645,6 +645,7 @@ body{
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     border-radius: 3px 3px 3px 3px;
     margin-top: 20px;
+    transition: all 0.5s ease;
 }
 
 .contact_box:hover{
@@ -1127,6 +1128,24 @@ input[type="checkbox"]:checked:before {
     content: '';
 }
 
+button{
+    width: 250px;
+    height: 49px;
+    background-color: #f7f2e6;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 49px;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    border-radius: 3px 3px 3px 3px;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+	background:#2e1911;
+	color:#fff;
+}
+
 .sp__nav, 
 .hamberger{
     display: none;
@@ -1181,7 +1200,7 @@ input[type="checkbox"]:checked:before {
     cursor: pointer;
     height: 30px;
     width: 33px;
-    z-index: 9999;
+    z-index: 9998;
     right: 0;
 }
 .hamberger span{
@@ -1192,7 +1211,7 @@ input[type="checkbox"]:checked:before {
     content: "";
     top: 30px;
     right: 30px;
-    z-index: 9999;
+    z-index: 9998;
     transition: 0.5s;
 }
 
@@ -1249,7 +1268,7 @@ width: 100%;
 height: 100vh;
 background-color: rgba(229,220,196,0.80);
 top: 0;
-z-index: 9998;
+z-index: 9997;
 }
 
 .sp__nav ul{
@@ -1282,7 +1301,7 @@ margin: 20px;
     background-position: center;
     background-repeat: no-repeat;
     background-position: top;
-    margin: 15px;
+    margin: 33px;
 }
 
 .concept_logo img{
