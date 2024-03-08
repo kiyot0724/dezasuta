@@ -39,8 +39,8 @@ body{
     display: block;
     background-image: url(../image/2x/main@2x-100.jpg);
     background-repeat: no-repeat;
-    -webkit-animation: zoom 10s 1;
-    animation: zoom 3s 1;
+    -webkit-animation: zoom 3s 1;
+    animation: zoom 4s 1;
     animation-fill-mode: forwards;
     background-size: cover;
     background-position: center;
@@ -50,7 +50,7 @@ body{
 
 @keyframes zoom {
 0% {
-    transform: scale(1);
+    transform: scale(0.9);
 }
 100% {
     transform: scale(1.07);
@@ -178,11 +178,11 @@ body{
 .concept_text1 {
     font-size: 23px;
     line-height: 1.521;
-    letter-spacing: 0.43em;
+    letter-spacing: 0.4em;
     -webkit-writing-mode: vertical-rl;
     flex-direction: row-reverse;
     position: absolute;
-    height: 385px;
+    height: 388px;
     padding: 76px;
     background-color: #fff;
     top: 527px;
@@ -192,7 +192,7 @@ body{
 
 .concept_text1 span{
 	opacity: 0;
-	animation: onetxtanime 2s forwards;
+	animation: onetxtanime 3s forwards;
 }
 
 .concept_text1 span:nth-child(1){animation-delay: 1s;}
@@ -235,6 +235,57 @@ body{
 @keyframes onetxtanime{
 	from { opacity: 0 ;}
 	to { opacity: 1 ;}
+}
+
+@media screen and (min-width:768px) {
+
+    .concept_text1 span{
+        opacity: 0;
+        animation: onetxtanime 5s forwards;
+    }
+
+    .concept_text1 span:nth-child(1){animation-delay: 3.5s;}
+    .concept_text1 span:nth-child(2){animation-delay: 3.6s;}
+    .concept_text1 span:nth-child(3){animation-delay: 3.7s;}
+    .concept_text1 span:nth-child(4){animation-delay: 3.8s;}
+    .concept_text1 span:nth-child(5){animation-delay: 3.9s;}
+    .concept_text1 span:nth-child(6){animation-delay: 4s;}
+    .concept_text1 span:nth-child(7){animation-delay: 4.1s;}
+    .concept_text1 span:nth-child(8){animation-delay: 4.2s;}
+    .concept_text1 span:nth-child(9){animation-delay: 4.3s;}
+    .concept_text1 span:nth-child(10){animation-delay: 4.4s;}
+    .concept_text1 span:nth-child(11){animation-delay: 4.5s;}
+    .concept_text1 span:nth-child(12){animation-delay: 4.6s;}
+    .concept_text1 span:nth-child(13){animation-delay: 4.7s;}
+    .concept_text1 span:nth-child(14){animation-delay: 4.8s;}
+    .concept_text1 span:nth-child(15){animation-delay: 4.9s;}
+
+    .lead1{
+        opacity: 0;
+        animation: onetxtanime 2s forwards;
+    }
+    
+    .lead2{
+        opacity: 0;
+        animation: onetxtanime 3s forwards;
+    }
+    
+
+    .lead1:nth-child(1){animation-delay: 5.2s;}
+    .lead1:nth-child(3){animation-delay: 5.3s;}
+    .lead1:nth-child(5){animation-delay: 5.4s;}
+    .lead2:nth-child(8){animation-delay: 5.5s;}
+    .lead2:nth-child(10){animation-delay: 5.7s;}
+    .lead2:nth-child(12){animation-delay: 5.8s;}
+    .lead2:nth-child(14){animation-delay: 5.9s;}
+    .lead2:nth-child(16){animation-delay: 6s;}
+    .lead2:nth-child(18){animation-delay: 6.1s;}
+
+    @keyframes onetxtanime{
+        from { opacity: 0 ;}
+        to { opacity: 1 ;}
+    }
+
 }
 
 
@@ -287,6 +338,8 @@ body{
 
 .concept_logo img:hover {
     animation-play-state: paused;
+    width: 100px;
+    transition: 1s;
 }
 
 #about{
@@ -348,35 +401,39 @@ body{
     padding-left: 27px;
 }
 
-.viewmore{
-    width: 188px;
-    height: 39px;
-    line-height: 39px;
-    border: #6d5e58 solid 1px;
-    font-size: 12px;
-    letter-spacing: 0.15em;
-    text-align: center;
+
+.btnarrow5{
     position: relative;
+    border: 1px solid #2e1911;
+    border-radius: 3px;
+    padding: 12px 52px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #2e1911;
+    transition: all .3s linear;
 }
 
-.viewmore:hover{
+.btnarrow5:hover{
 	background:#2e1911;
-	color:#fff;
-    transition: all 0.5s ease;
+	color:#EBE2CA;
+    transition: all 0.6s ease;
+    opacity: 1;
 }
 
-.viewmore::before{
+.btnarrow5::before{
     position: absolute;
     content: "";
     width: 111px;
     height: 1px;
     background-color: #2e1911;
-    top: 50%;
+    top: 51%;
     right: -95px;
     transition: all 0.3s linear;
 }
 
-.viewmore::after{
+.btnarrow5::after{
     position: absolute;
     content: "";
     width: 14px;
@@ -388,12 +445,12 @@ body{
     transition: all 0.3s linear;
 }
 
-.viewmore:hover::before{
+.btnarrow5:hover::before{
     right: -110px;
 }
 
-.viewmore:hover::after{
-    right:-110px;
+.btnarrow5:hover::after{
+    right: -110px;
 }
 
 .about_img{
@@ -637,22 +694,24 @@ body{
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
-.contact_box{
-    width: 250px;
-    height: 49px;
-    background-color: #f7f2e6;
-    margin: 0 auto;
+.button{
+    position: relative;
+    border: 1px solid #f7f2e6;
+    border-radius: 3px;
+    padding: 17px 52px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
     font-size: 15px;
-    line-height: 49px;
-    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
-    border-radius: 3px 3px 3px 3px;
-    margin-top: 20px;
-    transition: all 0.5s ease;
+    background-color: #f7f2e6;
+    color: #2e1911;
 }
 
-.contact_box:hover{
+.button:hover{
 	background:#2e1911;
-	color:#fff;
+	color:#f7f2e6;
+    transition: all .6s ease;
+    opacity: 1;
 }
 
 .totop{
@@ -699,6 +758,7 @@ body{
 .concept_inner{
     max-width: 1080px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .concept_title{
@@ -953,6 +1013,7 @@ body{
 
 #workspage{
     width: 100%;
+    padding: 10px;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
 }
 
@@ -1142,6 +1203,7 @@ button{
     border-radius: 3px 3px 3px 3px;
     margin-top: 20px;
     transition: all 0.5s ease;
+    border-radius: 3px;
 }
 
 button:hover{
@@ -1390,12 +1452,50 @@ padding-right: 0;
     padding-left: 50px;
 }
 
-.viewmore{
-    width: 170px;
-    height: 39px;
-    margin: 0 auto;
+.btnarrow5{
+    position: relative;
+    border: 1px solid #2e1911;
+    border-radius: 3px;
+    padding: 12px 52px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    color: #2e1911;
+    transition: all .3s linear;
+    margin-left: 40px;
 }
 
+.btnarrow5::before{
+    position: absolute;
+    content: "";
+    width: 85px;
+    height: 1px;
+    background-color: #2e1911;
+    top: 51%;
+    right: -65px;
+    transition: all 0.3s linear;
+}
+
+.btnarrow5::after{
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 1px;
+    background-color: #2e1911;
+    transform: rotate(45deg);
+    top: 14px;
+    right: -65px;
+    transition: all 0.3s linear;
+}
+
+.btnarrow5:hover::before{
+    display: none;
+}
+
+.btnarrow5:hover::after{
+    display: none;
+}
 #works{
     width: 100%;
     height: 1500px;
